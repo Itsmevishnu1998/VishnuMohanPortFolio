@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy');
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -20,6 +21,7 @@
 }
 .navbar ul{
     list-style-type: none;
+   
 }
 
 .navbar:hover{
@@ -30,13 +32,22 @@
     text-decoration: none;
     margin: 0 1rem;
     transition: color 0.3s ease;
-    
+    padding: 10px;
+    border-radius:5px;
 }
 .nav-item-active{
-    background-color: #ff0000;
+    background-color: #ff9500;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 0.5s ease-in-out;
 }
 .navbar a:hover{
     background-color: gray;
+    padding: 10px;
+    border-radius:5px;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 0.5s ease-in-out;
     
 }
 .navbar a.active{
@@ -45,18 +56,22 @@
 }
 
 .navbar .logo{
-    margin-top: 5rem;
+    display: flex;
+    transform: scale(2);
+    
+    
+}
+.logo-image{
+    mix-blend-mode: screen;
+    float: left;
+    filter: brightness(1.2);
+}
+
+.navbar .nav-links li{
+    display: inline;
+    margin: 0 1rem;
+    font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, monospace;
+    font-size: 1rem;
     
 }
 
-.navlist{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-ul>li{
-    display: inline;
-}

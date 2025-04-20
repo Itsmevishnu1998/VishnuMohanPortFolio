@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../NavCSS/NavBar.css'; // Import the CSS file for styling
+import Logo from '../ProfilePicture/NoBG.png'; // Import the image file
 
 function NavBar() {
     const[activeLink, setActiveLink]=useState('home');
@@ -9,7 +10,9 @@ function NavBar() {
     return(
         <>
         <nav className="navbar"> 
-            <div className="logo">Logo</div>
+            <div className="logo">
+                <img src={Logo} alt='Logo' className="logo-image" />
+            </div>
             <div className="nav-links">
                 <ul>
                     <li><a className={`${activeLink === 'home'?'nav-item-active':''}`} onClick={()=>handleLinkClick('home')} href="#home">Home</a></li>
