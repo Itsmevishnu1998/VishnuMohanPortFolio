@@ -1,0 +1,32 @@
+.card-row{
+    display: flex;
+   
+    margin: 1rem 0;
+    margin-top: 5rem;
+    justify-content: space-between;
+    width: 100%;
+}
+.card-column{
+  flex:0 0 auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+
+}
+.card-column:hover{
+    transform: scale(1.05);
+    transition:transform 0.4s ease-in-out;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   
+   
+}
+.card-container{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    
+
+}
+.card-container::-webkit-scrollbar{
+    display:none;
+}
