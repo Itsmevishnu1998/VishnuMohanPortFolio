@@ -1,0 +1,6 @@
+export const WeddingCardDescription="“Capture your most cherished moments with our professional wedding photography and videography services.From candid shots to cinematic highlights, we ensure every smile, tear, and celebration is beautifully preserved forever.”";
+export const WeddingCardTitle="Wedding Films and Photography";
+export const MaternityCardDescription="“Celebrate the beauty of motherhood with our elegant maternity photography sessions. We capture the glow, grace, and precious bond between mother and baby in timeless portraits you'll cherish forever.”";
+export const MaternityCardTitle="Maternity Films and Photography";
+export const BirthdayCardDescription="“Make your child's birthday unforgettable with our vibrant and fun-filled photography sessions. We capture the joy, laughter, and excitement of their special day, creating lasting memories that you can cherish forever. From candid moments to themed setups, we ensure every detail is beautifully documented.”";
+export const BirthdayCardTitle="Birthday Photography";

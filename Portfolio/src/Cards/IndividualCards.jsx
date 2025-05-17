@@ -15,7 +15,6 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { Box } from '@mui/material';
-import Wedding from './Wedding.jpg';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -41,7 +40,7 @@ const ExpandMore = styled((props) => {
   ],
 }));
 
-export default function WeddingCard() {
+export default function WeddingCard(props) {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -61,7 +60,7 @@ export default function WeddingCard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Wedding Films and Photography"
+        title={props.Title}
         subheader=""
         titleTypographyProps={{
           fontFamily: 'monospace',
@@ -73,8 +72,8 @@ export default function WeddingCard() {
       sx={{opacity: 0.5}}
         component="img"
         height="194"
-        image={Wedding}
-        alt="Wedding Photography"
+        image={props.Image}
+        alt={props.Alt}
       />
       <CardContent>
       <Box>
@@ -86,8 +85,7 @@ export default function WeddingCard() {
       fontFamily: 'Arial, sans-serif'
     }}
   >
-    “Capture your most cherished moments with our professional wedding photography and videography services. 
-    From candid shots to cinematic highlights, we ensure every smile, tear, and celebration is beautifully preserved forever.”
+    {props.Description}
   </Typography>
 </Box>
       </CardContent>

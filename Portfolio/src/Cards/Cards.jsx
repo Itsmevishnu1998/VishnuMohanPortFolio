@@ -1,6 +1,9 @@
 import React from "react";
 import WeddingCard from "./IndividualCards";
 import './Cards.css'; 
+import wedding from './Wedding.jpg';
+import maternity from './Matternity.jpg';
+import { WeddingCardTitle, WeddingCardDescription, MaternityCardTitle, MaternityCardDescription, BirthdayCardTitle, BirthdayCardDescription } from "./Constants.jsx";
 function Cards() {
     return(<>
 
@@ -8,34 +11,21 @@ function Cards() {
         <div className="card-row">
     <div className="card-column">
         
-    <WeddingCard/>
+    <WeddingCard Description={WeddingCardDescription} Title={WeddingCardTitle} Image={wedding} Alt="WeddingImage"/>
    
     </div>
     <div className="card-column">
         
-    <WeddingCard/>
+    <WeddingCard Description={MaternityCardDescription} Title={MaternityCardTitle} Image={maternity} Alt="MaternityImage"/>
    
     </div>
     <div className="card-column">
         
-    <WeddingCard/>
+    <WeddingCard Description={BirthdayCardDescription} Title={BirthdayCardTitle} Alt="BirthDayImage"/>
    
     </div>
-    <div className="card-column">
-        
-    <WeddingCard/>
    
-    </div>
-    <div className="card-column">
-        
-    <WeddingCard/>
    
-    </div>
-    <div className="card-column">
-        
-    <WeddingCard/>
-   
-    </div>
     </div>
     </div>
     
